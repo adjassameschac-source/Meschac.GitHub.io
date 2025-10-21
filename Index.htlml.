@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mon premier site GitHub</title>
+  <style>
+    body { font-family: Arial; text-align: center; background: #f4f4f4; margin-top: 50px; }
+    h1 { color: #333; }
+  </style>
+</head>
+<body>
+  <h1>Bienvenue sur mon site hébergé sur GitHub Pages !</h1>
+  <p>Ce site est 100% gratuit et professionnel.</p>
+</body>
+</html>
