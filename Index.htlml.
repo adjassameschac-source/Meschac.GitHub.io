@@ -1,15 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Mon premier site GitHub</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MeschacStore — Boutique Abomey-Goho</title>
+  <meta name="description" content="Boutique en ligne simple pour vendre sans stock. Contact WhatsApp, appels et Facebook inclus." />
   <style>
-    body { font-family: Arial; text-align: center; background: #f4f4f4; margin-top: 50px; }
-    h1 { color: #333; }
+    :root{--accent:#0b7eff;--bg:#f7f8fb;--card:#ffffff;--muted:#666}
+    *{box-sizing:border-box;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+    body{margin:0;background:var(--bg);color:#111}
+    header{background:linear-gradient(90deg,var(--accent),#4ac0ff);color:white;padding:20px 16px}
+    .wrap{max-width:960px;margin:0 auto}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:10px;background:white;color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700}
+    h1{font-size:20px;margin:0}
+    p.lead{margin:8px 0 0;opacity:0.95}
+    main{padding:16px}
+    .hero{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+    .hero .left{flex:1;min-width:260px}
+    .cta{display:inline-block;background:#fff;color:var(--accent);padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600;margin-top:12px}
+    .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-top:16px}
+    .card{background:var(--card);padding:10px;border-radius:10px;box-shadow:0 6px 14px rgba(16,24,40,0.06)}
+    .card img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+    .card h3{margin:8px 0 4px;font-size:15px}
+    .price{font-weight:700}
+    .small{font-size:13px;color:var(--muted)}
+    footer{padding:16px;text-align:center;color:var(--muted);font-size:13px}
+    .whatsapp{position:fixed;right:16px;bottom:16px;background:#25d366;color:white;border-radius:999px;padding:12px 16px;text-decoration:none;font-weight:700;box-shadow:0 10px 30px rgba(37,211,102,0.18)}
   </style>
 </head>
 <body>
-  <h1>Bienvenue sur mon site hébergé sur GitHub Pages !</h1>
-  <p>Ce site est 100% gratuit et professionnel.</p>
+  <header>
+    <div class="wrap">
+      <div class="brand">
+        <div class="logo">MS</div>
+        <div>
+          <h1>MeschacStore — Abomey‑Goho</h1>
+          <p class="lead">Produits populaires • Paiement à la commande • Livraison locale</p>
+        </div>
+      </div>
+    </div>
+  </header>  <main class="wrap">
+    <section class="hero">
+      <div class="left">
+        <h2>Commence sans stock — vends ce que tu montres</h2>
+        <p class="small">Publie les produits, reçois une commande, puis achète et expédie. Ajuste les prix pour couvrir les frais et gagner.</p>
+        <a class="cta" href="#products">Voir les produits</a>
+      </div>
+      <div class="right">
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='160'><rect width='100%' height='100%' fill='%23eef6ff'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%230b7eff' font-size='16'>Ta vidéo TikTok ici</text></svg>" alt="TikTok placeholder" style="border-radius:8px">
+      </div>
+    </section><section id="products">
+  <h3 style="margin-top:18px">Produits suggérés</h3>
+  <div class="products">
+    <article class="card">
+      <img src="https://via.placeholder.com/400x300?text=Gadget+1" alt="Produit 1">
+      <h3>Gadget multifonction</h3>
+      <div class="small">Pratique et petit pour la maison ou bureau.</div>
+      <div style="margin-top:8px"><span class="price">19 000 FCFA</span> <span class="small">• En précommande</span></div>
+    </article>
+    <article class="card">
+      <img src="https://via.placeholder.com/400x300?text=Accessoire+Téléphone" alt="Produit 2">
+      <h3>Accessoire téléphone</h3>
+      <div class="small">Compatible avec la plupart des smartphones.</div>
+      <div style="margin-top:8px"><span class="price">12 000 FCFA</span> <span class="small">• À la commande</span></div>
+    </article>
+    <article class="card">
+      <img src="https://via.placeholder.com/400x300?text=Lampe+10W" alt="Produit 3">
+      <h3>Lampe portable 10W</h3>
+      <div class="small">Idéal pour les zones sans électricité.</div>
+      <div style="margin-top:8px"><span class="price">25 000 FCFA</span> <span class="small">• Livraison 7‑14 jours</span></div>
+    </article>
+  </div>
+  <p class="small" style="margin-top:12px">Remplace les images par celles du fournisseur ou de tes futures vidéos. Indique toujours les délais réels aux clients.</p>
+</section>
+
+<section style="margin-top:18px">
+  <h3>Comment recevoir une commande</h3>
+  <ol class="small">
+    <li>Le client t'écrit via WhatsApp (bouton vert en bas à droite) ou t'appelle.</li>
+    <li>Tu demandes une avance (ex: 50%) ou paiement complet selon confiance.</li>
+    <li>Tu commandes le produit chez ton fournisseur (AliExpress, 1688, Temu).</li>
+    <li>Quand le produit est livré, tu confirmes et finalises la transaction.</li>
+  </ol>
+</section>
+
+<section style="margin-top:18px">
+  <h3>Contacts</h3>
+  <ul class="small">
+    <li>📞 Appel : 0194561233 / 0167512400</li>
+    <li>💬 WhatsApp : <a href="https://wa.me/2290194561233" target="_blank">229 0194561233</a></li>
+    <li>🌐 Facebook : <a href="https://facebook.com/Sido" target="_blank">Sido</a></li>
+  </ul>
+</section>
+
+  </main><a class="whatsapp" href="https://wa.me/2290194561233" target="_blank">WhatsApp</a>
+
+  <footer>
+    <div class="wrap">© <strong>MeschacStore</strong> — Fait pour démarrer vite. Tu peux modifier librement ce site à ta manière !</div>
+  </footer>
 </body>
 </html>
